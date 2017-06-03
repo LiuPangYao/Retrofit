@@ -9,17 +9,16 @@ import android.widget.TextView;
 import com.example.user.retrofit.ApiClient;
 import com.example.user.retrofit.ApiInterface;
 import com.example.user.retrofit.R;
-import com.example.user.retrofit.data.Detail;
 import com.example.user.retrofit.data.Movie;
-import com.example.user.retrofit.data.MoviesResponse;
 import com.example.user.retrofit.main.MainActivity;
-
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 細節
+ */
 public class DetailActivity extends AppCompatActivity {
 
     public final static String EXTRA_PARAM = "電影ID";
