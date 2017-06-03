@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:clickable="true"
+    android:stateListAnimator="@animator/card_foreground_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="5dip">
+
+            <ImageView
+                android:id="@+id/rating_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/star"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_gravity="center"
+                android:paddingLeft="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:padding="5dip" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="電影名稱"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:text="上映日期"
+            android:textColor="@color/colorGreyLight" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="電影簡述"
+            android:textColor="@color/colorGreyLight" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

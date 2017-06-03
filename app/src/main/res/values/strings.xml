@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="POPULAR">熱門</string>
+    <string name="TOP_RATED">推薦</string>
+</resources>
